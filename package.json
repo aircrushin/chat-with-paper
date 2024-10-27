@@ -1,0 +1,35 @@
+{
+  "name": "chat-with-paper",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@langchain/community": "^0.3.10",
+    "@langchain/openai": "^0.3.11",
+    "@pinecone-database/pinecone": "^4.0.0",
+    "axios": "^1.7.7",
+    "langchain": "^0.3.4",
+    "multer": "1.4.5-lts.1",
+    "next": "15.0.1",
+    "pdf-parse": "^1.1.1",
+    "pdfjs-dist": "^4.7.76",
+    "react": "19.0.0-rc-69d4b800-20241021",
+    "react-dom": "19.0.0-rc-69d4b800-20241021",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/react-pdf": "^7.0.0",
+    "@types/uuid": "^10.0.0",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}
