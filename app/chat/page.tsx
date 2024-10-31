@@ -1,10 +1,10 @@
 "use client"
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, Suspense } from 'react'
 import { useSearchParams } from 'next/navigation'
 import axios from 'axios'
 
-export default function Chat() {
+function ChatContent() {
   const [messages, setMessages] = useState<{ role: string, content: string }[]>([])
   const [input, setInput] = useState('')
   const [sourceId, setSourceId] = useState<string>('')
@@ -154,5 +154,13 @@ export default function Chat() {
         </div>
       </div>
     </div>
+  )
+}
+
+export default function Chat() {
+  return (
+    <Suspense fallback={<div>加载中...</div>}>
+      <ChatContent />
+    </Suspense>
   )
 }
